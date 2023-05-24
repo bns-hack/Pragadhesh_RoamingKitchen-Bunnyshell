@@ -1,0 +1,214 @@
+[
+    {
+        "id": "KFW3VDQAMVVC27IVN5UVD5OL",
+        "name": "Vanilla ice cream",
+        "description": "Ice cream",
+        "availability": false,
+        "imageUrl": "https://square-catalog-sandbox.s3.amazonaws.com/files/c419890039984c733872ff90bc5f710cab1dbcc3/original.jpeg",
+        "variations": [
+            {
+                "type": "ITEM_VARIATION",
+                "id": "IX3O5UGTJ3NS23MF6GHQLCF3",
+                "updated_at": "2023-05-07T06:28:21.683Z",
+                "version": 1683440901683,
+                "is_deleted": false,
+                "custom_attribute_values": null,
+                "catalog_v1_ids": null,
+                "present_at_all_locations": true,
+                "present_at_location_ids": null,
+                "absent_at_location_ids": null,
+                "item_variation_data": {
+                    "item_id": "KFW3VDQAMVVC27IVN5UVD5OL",
+                    "name": "Regular",
+                    "sku": null,
+                    "upc": null,
+                    "ordinal": 0,
+                    "pricing_type": "FIXED_PRICING",
+                    "price_money": {
+                        "amount": 5000,
+                        "currency": "USD"
+                    },
+                    "location_overrides": null,
+                    "track_inventory": null,
+                    "inventory_alert_threshold": null,
+                    "user_data": null,
+                    "service_duration": null,
+                    "available_for_booking": null,
+                    "item_option_values": null,
+                    "measurement_unit_id": null,
+                    "sellable": true,
+                    "stockable": true,
+                    "image_ids": null,
+                    "team_member_ids": null,
+                    "item_variation_vendor_info_ids": null
+                }
+            },
+            {
+                "type": "ITEM_VARIATION",
+                "id": "P3HBQNJ3E6BSMDDRP5IZ3RYM",
+                "updated_at": "2023-05-07T06:28:21.683Z",
+                "version": 1683440901683,
+                "is_deleted": false,
+                "custom_attribute_values": null,
+                "catalog_v1_ids": null,
+                "present_at_all_locations": true,
+                "present_at_location_ids": null,
+                "absent_at_location_ids": null,
+                "item_variation_data": {
+                    "item_id": "KFW3VDQAMVVC27IVN5UVD5OL",
+                    "name": "Medium",
+                    "sku": null,
+                    "upc": null,
+                    "ordinal": 1,
+                    "pricing_type": "FIXED_PRICING",
+                    "price_money": {
+                        "amount": 10000,
+                        "currency": "USD"
+                    },
+                    "location_overrides": null,
+                    "track_inventory": null,
+                    "inventory_alert_threshold": null,
+                    "user_data": null,
+                    "service_duration": null,
+                    "available_for_booking": null,
+                    "item_option_values": null,
+                    "measurement_unit_id": null,
+                    "sellable": true,
+                    "stockable": true,
+                    "image_ids": null,
+                    "team_member_ids": null,
+                    "item_variation_vendor_info_ids": null
+                }
+            }
+        ]
+    },
+    {
+        "id": "BJKCWLIQVJ7XNUHMJ3HSCRID",
+        "name": "Orange juice",
+        "description": "Juice",
+        "availability": false,
+        "imageUrl": "https://square-catalog-sandbox.s3.amazonaws.com/files/232b73a9aa53a607acc5cb9fe94ddc76ebec2886/original.jpeg",
+        "variations": [
+            {
+                "type": "ITEM_VARIATION",
+                "id": "PXGCN2FBSYIPP7KVE75YVSNW",
+                "updated_at": "2023-05-10T14:49:24.254Z",
+                "version": 1683730164254,
+                "is_deleted": false,
+                "custom_attribute_values": null,
+                "catalog_v1_ids": null,
+                "present_at_all_locations": true,
+                "present_at_location_ids": null,
+                "absent_at_location_ids": null,
+                "item_variation_data": {
+                    "item_id": "BJKCWLIQVJ7XNUHMJ3HSCRID",
+                    "name": "Medium",
+                    "sku": null,
+                    "upc": null,
+                    "ordinal": 0,
+                    "pricing_type": "FIXED_PRICING",
+                    "price_money": {
+                        "amount": 5000,
+                        "currency": "USD"
+                    },
+                    "location_overrides": null,
+                    "track_inventory": null,
+                    "inventory_alert_threshold": null,
+                    "user_data": null,
+                    "service_duration": null,
+                    "available_for_booking": null,
+                    "item_option_values": null,
+                    "measurement_unit_id": null,
+                    "sellable": true,
+                    "stockable": true,
+                    "image_ids": null,
+                    "team_member_ids": null,
+                    "item_variation_vendor_info_ids": null
+                }
+            }
+        ]
+    },
+    {
+        "id": "DEUMS6XC2CVOHUH7JSAKWGUD",
+        "name": "Watermelon juice",
+        "description": "Juice",
+        "availability": false,
+        "imageUrl": "https://square-catalog-sandbox.s3.amazonaws.com/files/48044db73303c8e88722aec8dd4e97d932242461/original.jpeg",
+        "variations": [
+            {
+                "type": "ITEM_VARIATION",
+                "id": "PTK7WEKRY7QHKNR75NY2EB46",
+                "updated_at": "2023-05-11T05:31:49.589Z",
+                "version": 1683783109589,
+                "is_deleted": false,
+                "custom_attribute_values": null,
+                "catalog_v1_ids": null,
+                "present_at_all_locations": true,
+                "present_at_location_ids": null,
+                "absent_at_location_ids": null,
+                "item_variation_data": {
+                    "item_id": "DEUMS6XC2CVOHUH7JSAKWGUD",
+                    "name": "Regular",
+                    "sku": null,
+                    "upc": null,
+                    "ordinal": 0,
+                    "pricing_type": "FIXED_PRICING",
+                    "price_money": {
+                        "amount": 2000,
+                        "currency": "USD"
+                    },
+                    "location_overrides": null,
+                    "track_inventory": null,
+                    "inventory_alert_threshold": null,
+                    "user_data": null,
+                    "service_duration": null,
+                    "available_for_booking": null,
+                    "item_option_values": null,
+                    "measurement_unit_id": null,
+                    "sellable": true,
+                    "stockable": true,
+                    "image_ids": null,
+                    "team_member_ids": null,
+                    "item_variation_vendor_info_ids": null
+                }
+            },
+            {
+                "type": "ITEM_VARIATION",
+                "id": "ZFRZXFI53B4XOSFYA33WBLTQ",
+                "updated_at": "2023-05-11T05:31:49.589Z",
+                "version": 1683783109589,
+                "is_deleted": false,
+                "custom_attribute_values": null,
+                "catalog_v1_ids": null,
+                "present_at_all_locations": true,
+                "present_at_location_ids": null,
+                "absent_at_location_ids": null,
+                "item_variation_data": {
+                    "item_id": "DEUMS6XC2CVOHUH7JSAKWGUD",
+                    "name": "Medium",
+                    "sku": null,
+                    "upc": null,
+                    "ordinal": 1,
+                    "pricing_type": "FIXED_PRICING",
+                    "price_money": {
+                        "amount": 5000,
+                        "currency": "USD"
+                    },
+                    "location_overrides": null,
+                    "track_inventory": null,
+                    "inventory_alert_threshold": null,
+                    "user_data": null,
+                    "service_duration": null,
+                    "available_for_booking": null,
+                    "item_option_values": null,
+                    "measurement_unit_id": null,
+                    "sellable": true,
+                    "stockable": true,
+                    "image_ids": null,
+                    "team_member_ids": null,
+                    "item_variation_vendor_info_ids": null
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,20 @@
+.progress-bar {
+    width: 50%;
+    height: 10px !important;
+    border-radius: 4px !important;
+  }
+  
+  .MuiLinearProgress-root {
+    height: 10px !important;
+    width: 50%;
+    border-radius: 4px !important;
+  }
+  
+  .MuiLinearProgress-barColorSecondary {
+    background-color: #5CAC0E;
+  }
+  
+  .menuitem {
+    background-size: cover;
+    background-position: center;
+}

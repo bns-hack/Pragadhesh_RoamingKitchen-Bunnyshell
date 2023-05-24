@@ -1,0 +1,40 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    environment:
+      - REACT_APP_GOOGLE_MAPS_API_KEY='AIzaSyCO50PpfZ2BCG0YxfOxPK9xkzUQ4pw9gmM'
+    depends_on:
+      - backend
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    environment:
+      - POSTGRES_HOST=db
+      - POSTGRES_DB=theroamingkitchen
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - aiaccesskey=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
+      - imageaccesskey=V3xiyrRr6hGTjUGsEVPsT3BlbkFJfjwzNSVc9q4qriK8LvUa
+      - awsaccesskey=AKIARUUUFFHVADKQSWNK
+      - awssecretkey=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
+      - squareaccesstoken=EAAAEMKlX8RyALA7ocRmrjy3pW-AgU3tXzUB_BtoEKF9q8baS9k2sY_dG74arrnB
+    depends_on:
+      - db
+  db:
+    image: postgres
+    container_name: theroamingkitchen
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: theroamingkitchen
+    ports:
+      - "5432:5432"

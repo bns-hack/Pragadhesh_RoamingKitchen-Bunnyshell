@@ -1,0 +1,93 @@
+.curve {
+    position: absolute;
+    width: 1200px;
+    height: 1200px;
+    left: 290px;
+    top: -800px;
+    border: 2px solid #4C9506;
+    border-radius: 50%;
+  }
+  
+.dotted-circle{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    left:600px;
+    top:100px;
+    border-radius: 50%;
+    border-color: #4C9506 #4C9506 #4C9506 #4C9506 ;
+  }
+  
+.food1 {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 0%;
+    left: 42%;
+    border-radius: 50%;
+    background-image: url('../assets/images/tacos.jpg');
+    background-size: cover;
+  }
+  
+.food2 {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 10%;
+    left: 15%;
+    border-radius: 50%;
+    background-image: url('../assets/images/burger.jpg');
+    background-size: cover;
+  }
+  
+.food3 {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 13%;
+    right: 13%;
+    border-radius: 50%;
+    background-image: url('../assets/images/sandwich.jpg');
+    background-size: cover;
+  }
+  
+.food4 {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 32%;
+    left: 2%;
+    border-radius: 50%;
+    background-image: url('../assets/images/pizza.jpg');
+    background-size: cover;
+  }
+
+.food5 {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 38%;
+    right: 1%;
+    border-radius: 50%;
+    background-image: url('../assets/images/icecream.jpg');
+    background-size: cover;
+  }
+  
+.foodtruck {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    top: 28%;
+    right: 22%;
+    border-radius: 50%;
+    background-image: url('../assets/images/foodtruck.jpg');
+    background-size: cover;
+  }
+  
+.logo
+  {
+    background-image: url('../assets/images/foodtrucklogo.jpg');
+    background-size: cover;
+    width: 40px;
+    height: 30px;
+  }

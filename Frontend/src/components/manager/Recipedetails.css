@@ -1,0 +1,19 @@
+.imagelogo
+  {
+    background-image: url('../../assets/images/foodtrucklogo.jpg');
+    background-size: cover;
+    width: 100px;
+    height: 70px;
+  }
+
+  .recipelogo {
+    background-size: cover;
+    background-position: center;
+    width: 22rem;
+    height: 26rem;
+}
+
+.menuitem {
+  background-size: cover;
+  background-position: center;
+}
