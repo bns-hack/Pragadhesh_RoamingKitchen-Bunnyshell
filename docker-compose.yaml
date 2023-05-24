@@ -16,7 +16,7 @@ services:
     ports:
       - 3000:3000
     environment:
-      - "REACT_APP_GOOGLE_MAPS_API_KEY=AIzaSyCO50PpfZ2BCG0YxfOxPK9xkzUQ4pw9gmM"
+      - "REACT_APP_GOOGLE_MAPS_API_KEY={google maps api key}"
     depends_on:
       - backend
   backend:
@@ -40,11 +40,11 @@ services:
       - POSTGRES_PORT=5432
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - aiaccesskey=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
-      - imageaccesskey=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
-      - awsaccesskey=AKIARUUUFFHVADKQSWNK
-      - awssecretkey=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
-      - squareaccesstoken=EAAAEMKlX8RyALA7ocRmrjy3pW-AgU3tXzUB_BtoEKF9q8baS9k2sY_dG74arrnB
+      - aiaccesskey={openaikey}
+      - imageaccesskey={openaikey}
+      - awsaccesskey={awsaccesskey}
+      - awssecretkey={awssecretkey}
+      - squareaccesstoken={squareaccesstoken}
     depends_on:
       - db
   db:
