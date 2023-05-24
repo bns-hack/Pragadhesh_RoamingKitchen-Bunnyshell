@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://roamingkitchen-application.bunnyenv.com")
 @RestController
 @RequestMapping("/api")
 public class MenuItemController {
