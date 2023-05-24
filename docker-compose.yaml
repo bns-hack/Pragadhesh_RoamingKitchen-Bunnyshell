@@ -1,6 +1,6 @@
 version: '3'
 services:
-  frontend:
+  roamingkitchen:
     build:
       context: ./Frontend
       dockerfile: Dockerfile
