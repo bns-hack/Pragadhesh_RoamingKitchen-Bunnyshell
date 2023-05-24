@@ -101,6 +101,33 @@ const Location = () => {
     }
   };
 
+  const updatedefaultLocation = async () => {
+    setIsLoading(true);
+    try {
+      const response = await axios.put(`${BACKEND_URL}locations`, {
+        latitude: 37.7749,
+        longitude: -122.4194,
+      });
+      if (response.status === 200) {
+        setLocdata(response.data);
+        dispatch(
+          updateLocation({
+            latitude: 37.7749,
+            longitude: -122.4194,
+          })
+        );
+        setIsUpdate(true);
+        setUpresponse("Location updated successfully");
+        setIsLoading(false);
+      }
+    } catch (error: any) {
+      console.log(error);
+      setIsUpdate(true);
+      setUpresponse("Error in updating the location");
+      setIsLoading(false);
+    }
+  };
+
   return (
     <div className="flex flex-col w-full h-full relative overflow-hidden">
       {!isLoading && (
@@ -122,12 +149,22 @@ const Location = () => {
             <div className="flex w-full font-poppins font-semibold text-xl text-darkgreen">
               SET GEOLOCATION
             </div>
-            <button
-              className="w-48 h-12 bg-darkgreen text-white font-poppins font-bold text-sm rounded"
-              onClick={updateStoreLocation}
-            >
-              UPDATE LOCATION
-            </button>
+            <div className="flex w-full">
+              <div className="flex pr-2">
+                <button
+                  className="w-48 h-12 bg-darkgreen text-white font-poppins font-bold text-sm rounded"
+                  onClick={updatedefaultLocation}
+                >
+                  SET DEFAULT LOCATION
+                </button>
+              </div>
+              <button
+                className="w-48 h-12 bg-darkgreen text-white font-poppins font-bold text-sm rounded"
+                onClick={updateStoreLocation}
+              >
+                UPDATE LOCATION
+              </button>
+            </div>
           </div>
           <div className="flex w-full pl-20 pr-10 maps">
             <MapContainer

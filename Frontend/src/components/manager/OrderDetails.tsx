@@ -10,6 +10,7 @@ import MapContainer from "../maps/Directionmap";
 import { Order } from "../../interface/activeorders";
 import { BACKEND_URL } from "../../constants/backendurl";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const OrderDetails = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -88,6 +89,15 @@ const OrderDetails = () => {
             THE ROAMING KITCHEN
           </div>
         </div>
+        {orderstatus && (
+          <div className="flex pr-5 pt-3">
+            <Link to="/manager">
+              <button className="w-36 h-12 bg-darkgreen text-white font-poppins font-bold text-sm rounded-3xl">
+                Back
+              </button>
+            </Link>
+          </div>
+        )}
       </div>
       {isLoading && (
         <div className="flex w-full h-full justify-center items-center">
