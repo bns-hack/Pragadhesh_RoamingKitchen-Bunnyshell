@@ -4,15 +4,6 @@ services:
     build:
       context: ./Frontend
       dockerfile: Dockerfile
-    deploy:
-      resources:
-        limits:
-          cpus: '1'
-          memory: 2G
-        reservations:
-          cpus: '1'
-          memory: 1G
-      replicas: 2
     ports:
       - 3000:3000
     environment:
@@ -23,15 +14,6 @@ services:
     build:
       context: ./Backend
       dockerfile: Dockerfile
-    deploy:
-      resources:
-        limits:
-          cpus: '1'
-          memory: 1G
-        reservations:
-          cpus: '1'
-          memory: 1G
-      replicas: 2
     ports:
       - 8080:8080
     environment:
@@ -41,7 +23,7 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
       - aiaccesskey=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
-      - imageaccesskey=V3xiyrRr6hGTjUGsEVPsT3BlbkFJfjwzNSVc9q4qriK8LvUa
+      - imageaccesskey=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
       - awsaccesskey=AKIARUUUFFHVADKQSWNK
       - awssecretkey=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
       - squareaccesstoken=EAAAEMKlX8RyALA7ocRmrjy3pW-AgU3tXzUB_BtoEKF9q8baS9k2sY_dG74arrnB
