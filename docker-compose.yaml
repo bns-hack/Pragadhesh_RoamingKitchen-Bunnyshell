@@ -4,6 +4,8 @@ services:
     build:
       context: ./Frontend
       dockerfile: Dockerfile
+    labels:
+      - "bunnyshell-hackathon"
     deploy:
       resources:
         limits:
@@ -23,6 +25,8 @@ services:
     build:
       context: ./Backend
       dockerfile: Dockerfile
+    labels:
+      - "bunnyshell-hackathon"
     deploy:
       resources:
         limits:
@@ -49,6 +53,8 @@ services:
       - db
   db:
     image: postgres
+    labels:
+      - "bunnyshell-hackathon"
     container_name: theroamingkitchen
     environment:
       POSTGRES_USER: postgres
