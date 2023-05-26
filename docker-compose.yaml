@@ -39,26 +39,13 @@ services:
     ports:
       - 8080:8080
     environment:
-      - POSTGRES_HOST=db
-      - POSTGRES_DB=theroamingkitchen
+      - POSTGRES_HOST={postgreshost}
+      - POSTGRES_DB={postgresdb}
       - POSTGRES_PORT=5432
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER={postgresuser}
+      - POSTGRES_PASSWORD={postgrespassword}
       - aiaccesskey={openaikey}
       - imageaccesskey={openaikey}
       - awsaccesskey={awsaccesskey}
       - awssecretkey={awssecretkey}
       - squareaccesstoken={squareaccesstoken}
-    depends_on:
-      - db
-  db:
-    image: postgres
-    labels:
-      - "bunnyshell-hackathon"
-    container_name: theroamingkitchen
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: theroamingkitchen
-    ports:
-      - "5432:5432"
