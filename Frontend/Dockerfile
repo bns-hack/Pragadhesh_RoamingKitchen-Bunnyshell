@@ -33,4 +33,4 @@ ENV HOST=0.0.0.0
 EXPOSE $PORT
 
 # Start the app
-CMD ["build/index.js"]
+CMD ["node", "build/index.js"]
