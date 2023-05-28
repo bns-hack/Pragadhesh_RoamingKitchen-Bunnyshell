@@ -7,14 +7,7 @@ services:
     labels:
       - "bunnyshell-hackathon"
     deploy:
-      resources:
-        limits:
-          cpus: '1'
-          memory: 2G
-        reservations:
-          cpus: '1'
-          memory: 1G
-      replicas: 2
+      replicas: 3
     ports:
       - 3000:3000
     environment:
@@ -35,7 +28,7 @@ services:
         reservations:
           cpus: '1'
           memory: 1G
-      replicas: 2
+      replicas: 1
     ports:
       - 8080:8080
     environment:

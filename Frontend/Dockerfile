@@ -1,5 +1,5 @@
 # Base image
-FROM node:14-alpine
+FROM node:14 as builder
 
 # Set working directory
 WORKDIR /app
@@ -14,6 +14,15 @@ COPY . .
 # Build the React app
 RUN npm run build
 
+# Stage 2: Use distroless base image
+FROM gcr.io/distroless/nodejs:14
+
+# Set working directory
+WORKDIR /app
+
+# Copy built files from the previous stage
+COPY --from=builder /app/build ./build
+
 # Set environment variables
 ARG REACT_APP_GOOGLE_MAPS_API_KEY
 ENV REACT_APP_GOOGLE_MAPS_API_KEY=$REACT_APP_GOOGLE_MAPS_API_KEY
@@ -24,4 +33,4 @@ ENV HOST=0.0.0.0
 EXPOSE $PORT
 
 # Start the app
-CMD ["npm", "start"]
+CMD ["build/index.js"]

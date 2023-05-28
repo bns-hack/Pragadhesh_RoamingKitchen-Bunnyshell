@@ -5,7 +5,7 @@ WORKDIR /app
 RUN mvn clean package -DskipTests
 
 # Stage 2: Build the application image
-FROM openjdk:11-jre-slim
+FROM gcr.io/distroless/java:11
 COPY --from=build /app/target/theroamingkitchen-0.0.1-SNAPSHOT.jar /app.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "/app.jar"]
