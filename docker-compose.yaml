@@ -4,11 +4,16 @@ services:
     build:
       context: ./Frontend
       dockerfile: Dockerfile
-      args:
-        REACT_APP_GOOGLE_MAPS_API_KEY: '{React api key}'
     labels:
       - "bunnyshell-hackathon"
     deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2G
+        reservations:
+          cpus: '1'
+          memory: 1G
       replicas: 1
     ports:
       - 3000:3000
