@@ -1,35 +1,36 @@
 # Stage 1: Build the React app
-FROM node:14-alpine as build-stage
+FROM node:14-alpine as build
+
 WORKDIR /app
+
+# Install app dependencies
 COPY package.json package-lock.json ./
-RUN npm install
+RUN npm ci --only=production
+
+# Copy app source code
 COPY . .
-RUN npm run build
 
-# Stage 2: Create a minimal production image
-FROM node:14-alpine
-WORKDIR /app
-
-# Copy built files from the previous stage
-COPY --from=build-stage /app/build ./build
-
-# Set environment variables
+# Set environment variable for build
 ARG REACT_APP_GOOGLE_MAPS_API_KEY
 ENV REACT_APP_GOOGLE_MAPS_API_KEY=$REACT_APP_GOOGLE_MAPS_API_KEY
+
+# Build the React app
+RUN npm run build
+
+# Stage 2: Create the final runtime image
+FROM node:14-alpine
+
+WORKDIR /app
+
+# Copy the built app from the previous stage
+COPY --from=build /app/build ./build
+
+# Set environment variables for runtime
 ENV PORT=3000
 ENV HOST=0.0.0.0
-
-# Install env-cmd for loading environment variables from a file
-RUN npm install -g env-cmd
-
-# Create a .env file with the environment variable
-RUN echo "REACT_APP_GOOGLE_MAPS_API_KEY=$REACT_APP_GOOGLE_MAPS_API_KEY" > .env
-
-# Install serve for serving static files
-RUN npm install -g serve
 
 # Expose the app port
 EXPOSE $PORT
 
-# Start the app using env-cmd and serve, redirecting logs to /dev/null
-CMD ["sh", "-c", "env-cmd .env serve -s build > /dev/null 2>&1"]
+# Start the app
+CMD ["npx", "serve", "-s", "build","--silent"]

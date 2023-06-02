@@ -4,6 +4,8 @@ services:
     build:
       context: ./Frontend
       dockerfile: Dockerfile
+      args:
+        REACT_APP_GOOGLE_MAPS_API_KEY: ${React api key}
     labels:
       - "bunnyshell-hackathon"
     deploy:
