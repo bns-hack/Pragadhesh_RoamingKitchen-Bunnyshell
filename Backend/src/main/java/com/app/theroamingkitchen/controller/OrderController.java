@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "https://roamingkitchen-application.bunnyenv.com")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api")
 public class OrderController {
