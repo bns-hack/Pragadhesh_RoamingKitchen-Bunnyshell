@@ -39,11 +39,11 @@ services:
     ports:
       - 8080:8080
     environment:
-      - MYSQL_HOST={postgreshost}
-      - MYSQL_DB={postgresdb}
+      - MYSQL_HOST={mysqlhost}
+      - MYSQL_DB={mysqldb}
       - MYSQL_PORT=4000
-      - MYSQL_USER={postgresuser}
-      - MYSQL_PASSWORD={postgrespassword}
+      - MYSQL_USER={mysqluser}
+      - MYSQL_PASSWORD={mysqlpassword}
       - aiaccesskey={openaikey}
       - imageaccesskey={openaikey}
       - awsaccesskey={awsaccesskey}
