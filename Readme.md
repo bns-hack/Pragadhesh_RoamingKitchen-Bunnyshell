@@ -8,7 +8,7 @@ The environment consists of the following components:
 
 - **Frontend**: The frontend of the application is built with React and runs on Node.js. It provides the user interface for interacting with the roaming kitchen service. The frontend communicates with the backend service to fetch data and perform actions.
 - **Backend**: The backend of the application is built with Java and utilizes Maven for dependency management. It exposes a RESTful API that handles requests from the frontend and interacts with a PostgreSQL database. It also integrates with external services such as OpenAI, AWS, and Square for additional functionality. The backend uses a lightweight and secure approach by utilizing a Distroless image, reducing the attack surface and minimizing the risk of vulnerabilities.
-- **PostgreSQL Database**: The backend service uses a PostgreSQL database to store and retrieve data related to the roaming kitchen service.
+- **MySQL Database**: The backend service uses a MySQL database to store and retrieve data related to the roaming kitchen service.
 
 ## How to Use
 
@@ -18,10 +18,10 @@ To deploy the Roaming Kitchen application using Bunnyshell, follow these steps:
 2.  Replace the placeholder values in the `docker-compose.yml` file with your actual configuration values. Update the following variables:
 
     - `{google maps api key}`: Replace with your Google Maps API key.
-    - `{postgreshost}`: Replace with the hostname or IP address of your PostgreSQL database.
-    - `{postgresdb}`: Replace with the name of your PostgreSQL database.
-    - `{postgresuser}`: Replace with the username for accessing the PostgreSQL database.
-    - `{postgrespassword}`: Replace with the password for accessing the PostgreSQL database.
+    - `{mysqlhost}`: Replace with the hostname or IP address of your PostgreSQL database.
+    - `{mysqldb}`: Replace with the name of your MySQL database.
+    - `{mysqluser}`: Replace with the username for accessing the MySQL database.
+    - `{mysqlpassword}`: Replace with the password for accessing the MySQL database.
     - `{openaikey}`: Replace with your OpenAI API key.
     - `{awsaccesskey}`: Replace with your AWS access key.
     - `{awssecretkey}`: Replace with your AWS secret key.
