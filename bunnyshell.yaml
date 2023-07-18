@@ -8,7 +8,7 @@ components:
     -
         kind: Application
         name: backend
-        gitRepo: 'https://github.com/Pragadhesh/RoamingKitchen-Bunnyshell.git'
+        gitRepo: 'https://github.com/bns-hack/Pragadhesh_RoamingKitchen-Bunnyshell.git'
         gitBranch: master
         gitApplicationPath: Backend
         dockerCompose:
@@ -47,7 +47,7 @@ components:
     -
         kind: Application
         name: roamingkitchen
-        gitRepo: 'https://github.com/Pragadhesh/RoamingKitchen-Bunnyshell.git'
+        gitRepo: 'https://github.com/bns-hack/Pragadhesh_RoamingKitchen-Bunnyshell.git'
         gitBranch: master
         gitApplicationPath: Frontend
         dockerCompose:
